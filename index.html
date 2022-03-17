@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="index.js" type="module" defer></script>
+    <title>Under Construction</title>
+</head>
+<body>
+    <div class="left-decoration">
+        <picture>
+            <source srcset="./images/Left-Decoration.svg" media="(min-width:1537px)">
+            <source srcset="./images/Left-Decoration-tablet.svg" media="(min-width:767px)">
+            <source srcset="./images/Left-Decoration-mobile.svg" media="(max-width:767px)">
+            <img src="./images/Left-Decoration.svg" alt="Left-Decoration">
+        </picture>
+    </div>
+    <div class="right-decoration">
+        <picture>
+            <source srcset="./images/Right-Decoration.svg" media="(min-width:1537px)">
+            <source srcset="./images/Right-Decoration-tablet.svg" media="(min-width:767px)">
+            <source srcset="./images/Right-Decoration-mobile.svg" media="(max-width:767px)">
+            <img src="./images/Right-Decoration.svg" alt="Right-Decoration">
+        </picture>
+    </div>
+    <header>
+        <div class="header__logo">
+            <a href="#">
+                <picture>
+                    <source srcset="./images/Logo.svg" media="(min-width:551px)" >
+                    <source srcset="./images/Logo-mobile.svg" media="(max-width:550px)" >
+                    <img src="./images/Logo.svg" alt="logo">
+                </picture>
+                
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="warning">
+            <div class="warning__title">UNDER CONSTRUCTION</div>
+            <div class="warning__description">We're making lots of improvements and will be back soon</div>
+        </div>
+        <div class="timer">
+            <div class="timer__item">
+                <p id="days">00</p>
+                <picture>
+                    <source  srcset="./images/Days.svg" media="(min-width:769px )">
+                    <source  srcset="./images/Days-tablet.svg"media="(max-width:768px )">
+                    <img src="./images/Days.svg" alt="Days">
+                </picture>
+            </div>
+            <div class="timer__item">
+                <p>:</p>
+            </div>
+            <div class="timer__item">
+                <p id="hours">00</p>
+                <picture>
+                    <source  srcset="./images/Hours.svg" media="(min-width:769px )">
+                    <source  srcset="./images/Hours-tablet.svg"media="(max-width:768px )">
+                    <img src="./images/Hours.svg" alt="Hours">
+                </picture>
+            </div>
+            <div class="timer__item">
+                <p>:</p>
+            </div>
+            <div class="timer__item">
+                <p id="minutes">00</p>
+                <picture>
+                    <source  srcset="./images/Minutes.svg" media="(min-width:769px )">
+                    <source  srcset="./images/Minutes-tablet.svg"media="(max-width:768px )">
+                    <img src="./images/Minutes.svg" alt="Minutes">
+                </picture>
+            </div>
+            <div class="timer__item">
+                <p>:</p>
+            </div>
+            <div class="timer__item">
+                <p id="seconds">00</p>
+                <picture>
+                    <source  srcset="./images/Seconds.svg" media="(min-width:769px )">
+                    <source  srcset="./images/Seconds-tablet.svg"media="(max-width:768px )">
+                    <img src="./images/Seconds.svg" alt="Seconds">
+                </picture>
+            </div>
+        </div>
+        <div class="redirection">
+            <div class="redirection__note">Check our event page when you wait:</div>
+            <div id="link" class="redirection__link">
+                <p>Go to the event</p>
+                <img src="./images/Pointer.svg" alt="Pointer">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div  class="form">
+            <form id="form" action="#" class="form__body">
+                <div class="form__item">
+                    <label for="formEmail" class="form__label"></label>
+                    <input id="formEmail" type="text" name="Email" class="form__input _required _email" placeholder="Enter your Email and get notified">
+                </div>
+                <button type="submit" class="form__submit">
+                    <picture>
+                        <source  srcset="./images/Arrow-Right.svg"media="(min-width:769px )">
+                        <source  srcset="./images/Arrow-Right-tablet.svg"media="(max-width:768px )">
+                        <img src="./images/Arrow-Right.svg" alt="Arrow-Right">
+                    </picture>
+                </button>
+            </form>
+        </div>
+    </footer>
+    <div id="popup" class="popup _hidden">
+        <div class="popup__body">
+            <div class="popup__content">
+                <div id="cancel" class="popup__cancel"><img src="./images/Cancel.svg" alt="Cancel"></div>
+                <div class="popup__title">SUCCESS!</div>
+                <div class="popup__text">You have successfully subscribed to the email newsletter</div>
+                <button id="close" class="popup__close">Close</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

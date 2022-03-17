@@ -1,0 +1,333 @@
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Poppins"), local("Poppins-Regular"),
+         url("../fonts/Poppins-Regular.woff");
+}
+
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Poppins"), local("Poppins-SemiBold"),
+         url("../fonts/Poppins-SemiBold.woff");
+}
+
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Poppins"), local("Poppins-Bold"),
+         url("../fonts/Poppins-Bold.woff");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Roboto"), local("Roboto-Regular"),
+         url("../fonts/Roboto-Regular.woff");
+         
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+input{
+    border: none;
+    outline: none;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+html{
+    font-family: "Poppins", "Arial", sans-serif;
+    font-size: 18px;
+}
+
+body{
+    position: relative;
+    width : 100%;
+    height: 100%;
+}
+
+.left-decoration {
+    position: absolute;
+}
+.right-decoration{
+    position: absolute;
+    right: 0%;
+}
+
+.header__logo{
+    display: flex;
+    justify-content: center;
+    padding-top: 3.3rem;
+}
+
+main{
+    min-height:100% ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 4.2rem;
+}
+
+.warning{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2.6rem
+}
+
+.warning__title{
+    font-family: "Poppins", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 104%;
+    color: #162c4e3f;
+}
+
+.warning__description{
+    text-align: center;
+    font-size: 1rem;
+    max-width: 23.5rem;
+    line-height: 1.5rem;
+    padding-top: .5rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.timer{
+    display: flex;
+    gap: .3rem;
+    font-family: "Poppins", "Arial", sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+    color: #162C4E;
+}
+
+.timer__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 100%;
+}
+
+.redirection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding-top: 4rem;
+}
+
+.redirection__note{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.redirection__link{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 13.3rem;
+    min-height: 3.3rem;
+    border-radius: 2.2rem;
+    color: #FFFFFF;
+    background-color: #1D4169
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 10.6rem;
+    background-color: #162C4E;
+}
+
+.form__body{
+    position: relative;
+    display: flex;
+}
+
+.form__input{
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.6);
+    padding-right: 3.2rem;
+    padding-left: 1.5rem;
+    border-radius: 2.2rem;
+    min-height: 3.3rem;
+    min-width: 24.4rem;
+}
+
+.form__input._error{
+    box-shadow: 0 0 1rem #DF2224;
+}
+
+.form__submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: .5rem;
+    top: .5rem;
+    min-width: 2.3rem;
+    min-height: 2.3rem;
+    border-radius: 50%;
+    border: none;
+    background-color: #DF2224;
+}
+
+.popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(22, 44, 78, 0.6);
+    top: 0;
+    left: 0;
+    
+}
+._hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.popup__body{
+    position: relative;
+    min-height: 20.5rem;
+    min-width: 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.popup__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.popup__cancel{
+    max-width: fit-content;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+.popup__title{
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins","Arial",sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #162C4E;
+}
+.popup__text{
+    display: flex;
+    text-align: center;
+    max-width: 15.5rem;
+    font-size: 0.8rem;
+    line-height: 150%;
+}
+.popup__close{
+    font-family: "Poppins", "Arial", sans-serif;
+    font-size: 1rem;
+    min-width: 11.1rem;
+    min-height: 3.3rem;
+    border: none;
+    border-radius: 2.2rem;
+    background-color: #1D4169;
+    color: white;
+}
+
+@media only screen and (max-width : 1224px){
+    .warning__title{
+        font-size: 3.6rem;
+    }
+}
+
+@media only screen and (max-width : 992px){
+    html{
+        font-size: 16px;
+    }
+    .warning__title{
+        font-size: 4rem;
+    }
+    .warning__description{
+        max-width: 17.8rem;
+    }
+    main{
+        padding-top: 10.5rem;
+        padding-bottom: 10.5rem;
+    }
+    .redirection{
+        gap: 1rem;
+    }
+    .redirection__link{
+        font-size: 1.1rem;
+    }
+    footer{
+        min-height: 10rem;
+    }
+    .form__input{
+        min-width: 22.5rem;
+        min-height: 2.5rem;
+        font-size: 0.8rem;
+    }
+
+    
+
+    .form__submit{
+        min-height: 2rem;
+        min-width: 2rem;
+        right: 0.3rem;
+        top: 0.28rem;
+    }
+}
+@media only screen and (max-width : 992px)  and (orientation: portrait){
+    .header__logo{
+        padding-top: 6.3rem;
+    }
+}
+
+@media only screen and (max-width : 768px){
+    .warning__title{
+        font-size: 2.25rem;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .warning__title{
+        max-width: 22.5rem;
+        text-align: center;
+    }
+    .timer{
+        gap: .1rem;
+        font-size: 2.9rem;
+    }
+    .form__input{
+        min-width: 17.5rem;
+    }
+}
